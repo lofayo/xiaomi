@@ -1,0 +1,408 @@
+/* CSS没有单行注释，即：//注释 */
+
+
+/*头部导航条*/
+
+body {
+    min-width: 1266px;
+}
+.header {
+    background-color: black;
+    height: 40px;
+    line-height: 40px;
+}
+.header a {
+    color: #aaaaaa;
+    padding: 0 8px;
+}
+.header a:hover {
+    color: white;
+}
+.header a + a {
+    border-left: 1px solid #333333;
+}
+.header a:first-of-type {
+    padding-left: 62px;
+}
+.headerLeft {
+    float: left;
+}
+.headerRight {
+    float: right;
+}
+.shopCar {
+    width: 120px;
+    background: #333333 url("image/shopCar_logo.png") 10px center no-repeat;
+    color: #aaaaaa;
+    text-align: center;
+    display: inline-block;
+    margin-right: 40px;
+}
+.container {
+    margin: 0 62px;
+}
+.navbar {
+    position: relative;
+}
+.navbar a + a {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    font-size: 16px;
+    color: #666666;
+    padding: 0 10px;
+}
+.navbar a:hover {
+    color: #FF6600;
+}
+.navbar a img {
+    vertical-align: middle;
+}
+.navbar a img.logo {
+    width: 142px;
+}
+.navbar .search {
+    width: 294px;
+    height: 48px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.navbar .search:hover {
+    border-color: #999999;
+}
+.navbar .searchBox {
+    float: left;
+    height: 100%;
+    width: 210px;
+    padding: 0 10px;
+}
+.navbar .search .default_search {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    background-color: #EEEEEE;
+    font-size: 12px;
+    position: relative;
+    top: -33px;
+    left: 110px;
+    padding: 0;
+}
+.navbar .search .default_search:hover {
+    background-color: #FF6700;
+    color: white;
+}
+.navbar .searchBtn {
+    width: 48px;
+    height: 100%;
+    float: right;
+    border: none;
+    border-left: 1px solid #CCCCCC;
+    outline: none;
+    background: white url("image/search.png") no-repeat center;
+}
+.navbar .searchBtn:hover {
+    border-color: #999999;
+    background-color: #FF6700;
+    border: none;
+    cursor: pointer;
+    background-image: url("image/search2.png");
+}
+.mainZone {
+    width: 1226px;
+    height: 460px;
+    position: relative;
+}
+.mainZone_side {
+    width: 234px;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 4;
+}
+.mainZone_side ul {
+    padding: 20px 0;
+}
+.mainZone_side a {
+    width: 100%;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    color: white;
+    font-size: 14px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: url("image/arrow.png") no-repeat 90% center;
+    background-size: 12px 12px;
+}
+.mainZone_side a:hover {
+    background-color: #FF6700;
+    cursor: pointer;
+}
+.switchBtn {
+    position: absolute;
+    z-index: 4;
+    width: 41px;
+    height: 69px;
+    top: 195px;
+    cursor: pointer;
+}
+.leftBtn {
+    left: 234px;
+    background: url("image/leftSArrow.png") no-repeat left center;
+    background-size: 90% 60%;
+}
+.leftBtn:hover {
+    background-color: #999;
+    background-image: url("image/leftSArrow_bright.png");
+}
+.rightBtn {
+    right: 0;
+    background: url("image/rightSArrow.png") no-repeat left center;
+    background-size: 90% 60%;
+}
+.rightBtn:hover {
+    background-color: #999;
+    background-image: url("image/rightSArrow_bright.png");
+}
+.mainZone_img {
+    position: absolute;
+    z-index: 1;
+}
+.mainZone_img img {
+    position: absolute;
+    z-index: 1;
+}
+.imgSBtn {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    z-index: 3;
+}
+.imgSBtn span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("image/circle-full.png") no-repeat center;
+    background-size: 10px 10px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.imgSBtn span:hover {
+    background-image: url("image/circle-empty.png");
+}
+.imgSBtn .active {
+    background-image: url("image/circle-empty.png");
+}
+
+/* 主区下面的促销商品 */
+
+.mainZone-sub {
+    margin-top: 14px;
+    height: 170px;
+}
+.home-channel-list {
+    padding: 3px;
+    width: 228px;
+    height: 164px;
+    background-color: #5F5750;
+    float: left;
+}
+.home-channel-list li {
+    display: inline-block;
+    float: left;
+    height: 70px;
+    margin-top: 6px;
+}
+.home-channel-list li + li {
+    border-left: 1px solid #aaa;
+}
+.home-channel-list .row2 {
+    margin-top: 12px;
+    overflow: hidden;
+}
+.home-channel-list .fourth {
+    border-left: none;
+}
+.home-channel-list a {
+    display: inline-block;
+    width: 63px;
+    height: 56px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #aaa;
+    margin: 0 6px;
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+    position: relative;
+}
+.home-channel-list span {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+}
+.home-channel-list a:hover {
+    opacity: 1;
+}
+.home-promo-list {
+    float: right;
+}
+.home-promo-list li {
+    display: inline-block;
+    margin-left: 11px;
+}
+.home-promo-list li:hover {
+    box-shadow: 0 10px 50px #ccc;
+}
+.home-promo-list img {
+    width: 316px;
+    height: 170px;
+    vertical-align: top;
+}
+
+/* 小米明星单品 */
+
+.home-star-goods {
+    margin-top: 26px;
+}
+.goods-heading {
+    height: 58px;
+    position: relative;
+}
+.goods-heading .title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 58px;
+    color: #333;
+}
+.goods-heading .more {
+    width: 70px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    box-sizing: border-box;
+}
+.control {
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    border: 1px solid #E0E0E0;
+    float: left;
+    margin-left: -1px;
+}
+.control-prev {
+    background: url("image/leftSArrow.png") no-repeat center;
+    background-size: 50% 60%;
+}
+.control-prev-choose {
+    background: url("image/leftSArrow-choose.png") no-repeat center;
+    background-size: 50% 60%;
+    cursor: pointer;
+}
+.control-next {
+    background: url("image/rightSArrow.png") no-repeat center;
+    background-size: 50% 60%;
+}
+.control-next-choose {
+    background: url("image/rightSArrow-choose.png") no-repeat center;
+    background-size: 50% 60%;
+    cursor: pointer;
+}
+.goods-list {
+    overflow: hidden;
+    position: relative;
+    height: 340px;
+}
+.goods-list-ul {
+    width: 2480px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.goods-list li {
+    width: 234px;
+    height: 300px;
+    padding-top: 39px;
+    margin-right: 14px;
+    background-color: #FAFAFA;
+    display: inline-block;
+    float: left;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.rainbow-item1 {
+    border-color: #ffac13;
+}
+.rainbow-item2 {
+    border-color: #83c44e;
+}
+.rainbow-item3 {
+    border-color: #2196f3;
+}
+.rainbow-item4 {
+    border-color: #e53935;
+}
+.rainbow-item5 {
+    border-color: #00c0a5;
+}
+.rainbow-item6 {
+    border-color: #ffac13;
+}
+.rainbow-item7 {
+    border-color: #83c44e;
+}
+.rainbow-item8 {
+    border-color: #2196f3;
+}
+.rainbow-item9 {
+    border-color: #e53935;
+}
+.rainbow-item10 {
+    border-color: #00c0a5;
+}
+.goods-list .imgLink {
+    display: block;
+    margin: 0 37px 22px;
+}
+.goods-list img {
+    width: 160px;
+    height: 160px;
+}
+.goods-list p {
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+.goods-list .title {
+    font-size: 14px;
+    color: #333;
+}
+.goods-list .desc {
+    font-size: 12px;
+    color: #999;
+}
+.goods-list .price {
+    color: #FF6709;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 主区下面的一些其它 */
+
+.other {
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    height: 1000px;
+    padding-top: 38px;
+}
+.other .title {
+    height: 58px;
+    line-height: 58px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 22px;
+}
